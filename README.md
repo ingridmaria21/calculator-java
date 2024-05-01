@@ -1,4 +1,4 @@
-Pentru LOC am folosit 
+
 
 LOC : 118
 
@@ -13,5 +13,5 @@ Complexitate cognitiva -evaluateExpression: 14
 
 Raport de observatii in urma analizei codului:
 
-Start - linia 
-Calculator -linia 
+Calculator: - linia 75 - variabila textResult e redundanta 
+            - linia 188 - "return" nu este necesar avand in vedere ca avem o functie void 
