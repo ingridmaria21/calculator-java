@@ -1,0 +1,17 @@
+Defecte sau omisiuni posibile in urma testarii black box:
+
+1. În metoda ToString() din clasa Operations, numele metodei ar trebui să fie toString() conform convențiilor de denumire din Java.
+2. Variabila finalResult ar trebui să fie privată și să aibă getter și setter pentru a respecta encapsularea.
+3. Metoda Run ar trebui să fie privată, deoarece nu este folosită în afara clasei.
+4. Comentariul din metoda evaluateExpression care spune "// split expression by arithmetic operation to get all digits" este greșit, deoarece expresia este împărțită pe baza operatorilor aritmetici pentru a obține numerele, nu cifrele.
+5. Variabilele numberList și operationList ar trebui să fie locale în metoda evaluateExpression, deoarece nu sunt utilizate în afara acelei metode.
+6. În metoda evaluateExpression, verificarea dacă expresia începe cu + sau - ar trebui să fie mai robustă, luând în considerare spațiile albe și semnele multiple.
+7. În metoda evaluateExpression, nu există o verificare pentru divizarea la zero, ceea ce poate cauza o excepție în timpul calculului.
+8. În metoda Calculate, variabilele indexMultiply, indexDivide, indexPlus și indexMinus ar trebui să fie definite local și să fie numite conform convențiilor de denumire.
+9. În metoda Calculate, există o incoerență în modul în care sunt tratate operațiile de înmulțire și împărțire atunci când ambele sunt prezente în expresie.
+10. Nu sunt efectuate verificări pentru expresii invalide, cum ar fi operatori dublați sau expresii goale.
+
+Rezultate test unitar: 
+java.lang.AssertionError: 
+Expected :-5.0
+Actual   :9.0
